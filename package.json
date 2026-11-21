@@ -1,0 +1,53 @@
+{
+  "name": "browser-model-loader",
+  "version": "0.1.0",
+  "description": "Make in-browser AI model loads survive real networks and real devices: resumable Hugging Face downloads, retries, one progress bar, WebGPU checks and device-loss errors, and a registry of cached models.",
+  "license": "MIT",
+  "author": "Shafkathullah Ihsan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shafkathullah/browser-model-loader.git"
+  },
+  "homepage": "https://github.com/shafkathullah/browser-model-loader#readme",
+  "bugs": {
+    "url": "https://github.com/shafkathullah/browser-model-loader/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "transformers.js",
+    "webgpu",
+    "onnxruntime-web",
+    "webllm",
+    "local-ai",
+    "huggingface",
+    "resumable-download"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@huggingface/transformers": "4.3.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
