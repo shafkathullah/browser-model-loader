@@ -1,0 +1,51 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.1.0",
+  "entity": {
+    "type": "individual",
+    "role": "maintainer",
+    "name": "Shafkathullah Ihsan",
+    "email": "hey@shafu.xyz",
+    "description": "Independent software developer in Kanhangad, Kerala, India. I build PocketWebTools (https://pocketweb.tools), free AI tools that run entirely in the browser on the user's own device, and I maintain browser-model-loader, the open-source library that loads its models. Before going independent in April 2026 I spent nearly five years as a senior full-stack engineer at Prepfully.",
+    "webpageUrl": {
+      "url": "https://github.com/shafkathullah"
+    }
+  },
+  "projects": [
+    {
+      "guid": "browser-model-loader",
+      "name": "browser-model-loader",
+      "description": "Small helpers that make in-browser AI model loads survive real networks and real devices: resumable Hugging Face downloads, retries that tell a dropped connection from a blocked host, one progress bar, WebGPU and fp16 checks, GPU device-loss errors, and a registry of cached models. It wraps transformers.js, ONNX Runtime Web and WebLLM rather than replacing them.\n\nIt came out of PocketWebTools, a free site of in-browser AI tools (voice cloning, transcription, noise removal, background removal, OCR) where files never leave the user's device. Every model on pocketweb.tools loads through this library in production. Published on npm as browser-model-loader (MIT).",
+      "webpageUrl": {
+        "url": "https://github.com/shafkathullah/browser-model-loader"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/shafkathullah/browser-model-loader"
+      },
+      "licenses": ["spdx:MIT"],
+      "tags": ["machine-learning", "ai", "webgpu", "browser", "javascript", "typescript", "privacy", "on-device-ai"]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "bank-india",
+        "type": "bank",
+        "address": "",
+        "description": "Bank transfer to an Indian bank account in INR. Details on request."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "dev-2027",
+        "status": "active",
+        "name": "Development and maintenance, 2027",
+        "description": "A one-time grant for a year of work on browser-model-loader. PocketWebTools (pocketweb.tools) had about 25,700 visits and 16,900 finished results in the 30 days to 21 Nov 2026, 57% of visits on phones, and loads every model through this library. The grant pays for: (1) a few low-end Android phones and older laptops to test on, since that is where in-browser models fail most; (2) time to take the 0.1 helpers to a documented 1.0, with device checks, model format choice per device, resumable downloads, retries and the cached-model registry, plus runnable examples; (3) sending fixes upstream to transformers.js where the problem belongs there (resumable browser downloads are still an open request, issue #1220); (4) a public write-up of what works and what fails when running small models on cheap devices. I am the only maintainer today.",
+        "amount": 300000,
+        "currency": "INR",
+        "frequency": "one-time",
+        "channels": ["bank-india"]
+      }
+    ]
+  }
+}
