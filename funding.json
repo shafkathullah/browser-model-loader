@@ -22,8 +22,19 @@
       "repositoryUrl": {
         "url": "https://github.com/shafkathullah/browser-model-loader"
       },
-      "licenses": ["spdx:MIT"],
-      "tags": ["machine-learning", "ai", "webgpu", "browser", "javascript", "typescript", "privacy", "on-device-ai"]
+      "licenses": [
+        "spdx:MIT"
+      ],
+      "tags": [
+        "machine-learning",
+        "ai",
+        "webgpu",
+        "browser",
+        "javascript",
+        "typescript",
+        "privacy",
+        "on-device-ai"
+      ]
     }
   ],
   "funding": {
@@ -40,11 +51,13 @@
         "guid": "dev-2027",
         "status": "active",
         "name": "Development and maintenance, 2027",
-        "description": "A one-time grant for a year of work on browser-model-loader. PocketWebTools (pocketweb.tools) had about 25,700 visits and 16,900 finished results in the 30 days to 21 Nov 2026, 57% of visits on phones, and loads every model through this library. The grant pays for: (1) a few low-end Android phones and older laptops to test on, since that is where in-browser models fail most; (2) time to take the 0.1 helpers to a documented 1.0, with device checks, model format choice per device, resumable downloads, retries and the cached-model registry, plus runnable examples; (3) sending fixes upstream to transformers.js where the problem belongs there (resumable browser downloads are still an open request, issue #1220); (4) a public write-up of what works and what fails when running small models on cheap devices. I am the only maintainer today.",
+        "description": "One-time grant for a year of work on browser-model-loader, which loads every model on pocketweb.tools (about 25,700 visits in the 30 days to 21 Nov 2026, 57% on phones). It pays for: low-end Android phones and older laptops to test on; taking the 0.1 helpers to a documented 1.0 with runnable examples; sending fixes upstream to transformers.js (resumable browser downloads are still open, #1220); and a public write-up on running small models on cheap devices.",
         "amount": 300000,
         "currency": "INR",
         "frequency": "one-time",
-        "channels": ["bank-india"]
+        "channels": [
+          "bank-india"
+        ]
       }
     ]
   }
