@@ -6,7 +6,7 @@
     "role": "maintainer",
     "name": "Shafkathullah Ihsan",
     "email": "hey@shafu.xyz",
-    "description": "Independent software developer in Kanhangad, Kerala, India. I build PocketWebTools (https://pocketweb.tools), free AI tools that run entirely in the browser on the user's own device, and I maintain browser-model-loader, the open-source library that loads its models. Before going independent in April 2026 I spent nearly five years as a senior full-stack engineer at Prepfully.",
+    "description": "Independent software developer in Kanhangad, Kerala, India. I build PocketWebTools (https://pocketweb.tools), free local AI tools that run entirely in the browser on the user's own device, and I maintain browser-model-loader, the open-source library that loads its models. Before going independent in April 2026 I spent nearly five years as a senior full-stack engineer at Prepfully.",
     "webpageUrl": {
       "url": "https://github.com/shafkathullah"
     }
@@ -15,7 +15,7 @@
     {
       "guid": "browser-model-loader",
       "name": "browser-model-loader",
-      "description": "Small helpers that make in-browser AI model loads survive real networks and real devices: resumable Hugging Face downloads, retries that tell a dropped connection from a blocked host, one progress bar, WebGPU and fp16 checks, GPU device-loss errors, and a registry of cached models. It wraps transformers.js, ONNX Runtime Web and WebLLM rather than replacing them.\n\nIt came out of PocketWebTools, a free site of in-browser AI tools (voice cloning, transcription, noise removal, background removal, OCR) where files never leave the user's device. Every model on pocketweb.tools loads through this library in production. Published on npm as browser-model-loader (MIT).",
+      "description": "Small helpers that make local AI in the browser survive real networks and real devices: resumable Hugging Face downloads, retries that tell a dropped connection from a blocked host, one progress bar, WebGPU and fp16 checks, GPU device-loss errors, and a registry of cached models. It wraps transformers.js, ONNX Runtime Web and WebLLM rather than replacing them.\n\nIt came out of PocketWebTools, a free site of in-browser AI tools (voice cloning, transcription, noise removal, background removal, OCR) where files never leave the user's device. Every model on pocketweb.tools loads through this library in production. Published on npm as browser-model-loader (MIT).",
       "webpageUrl": {
         "url": "https://github.com/shafkathullah/browser-model-loader"
       },
@@ -33,7 +33,8 @@
         "javascript",
         "typescript",
         "privacy",
-        "on-device-ai"
+        "on-device-ai",
+        "local-ai"
       ]
     }
   ],
@@ -51,7 +52,7 @@
         "guid": "dev-2027",
         "status": "active",
         "name": "Development and maintenance, 2027",
-        "description": "One-time grant for a year of work on browser-model-loader, which loads every model on pocketweb.tools (about 25,700 visits in the 30 days to 21 Nov 2026, 57% on phones). It pays for: low-end Android phones and older laptops to test on; taking the 0.1 helpers to a documented 1.0 with runnable examples; sending fixes upstream to transformers.js (resumable browser downloads are still open, #1220); and a public write-up on running small models on cheap devices.",
+        "description": "One-time grant for a year of work on browser-model-loader, which loads every model on pocketweb.tools (about 25,700 visits in the 30 days to 21 Nov 2026, 57% on phones). It pays for: low-end Android phones and older laptops to test on; taking the 0.1 helpers to a documented 1.0 with runnable examples; sending fixes upstream to transformers.js (resumable browser downloads are still open, #1220); and a public write-up on running local AI on cheap devices.",
         "amount": 300000,
         "currency": "INR",
         "frequency": "one-time",
